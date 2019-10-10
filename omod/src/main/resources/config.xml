@@ -37,11 +37,7 @@
 		<require_module version="${emrapiVersion}">
 			org.openmrs.module.emrapi
 		</require_module>
-
-		<require_module version="${appointmentschedulingVersion}">
-			org.openmrs.module.appointmentscheduling
-		</require_module>
-
+		
 		<require_module version="${htmlformentryuiVersion}">
 			org.openmrs.module.htmlformentryui
 		</require_module>
@@ -50,6 +46,9 @@
 	
 	<aware_of_modules>
 	    <aware_of_module>org.openmrs.module.legacyui</aware_of_module>
+	    <aware_of_module version="${appointmentschedulingVersion}">
+			org.openmrs.module.appointmentscheduling
+		</aware_of_module>
 	</aware_of_modules>
 
 	<!-- Module Activator -->
